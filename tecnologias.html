@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias - Guia Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Guia Profissional de Desenvolvimento Web</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="fluxo.html">Fluxo do Projeto</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle-button" aria-label="Alternar tema claro/escuro">🌓</button>
+        <button id="hamburger-btn" aria-label="Menu">☰</button>
+    </header>
+
+    <main class="technologies-page">
+        <section class="filters-section">
+            <h2>Tecnologias Web</h2>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar tecnologia...">
+            </div>
+            <div class="category-filters">
+                <button class="category-filter active" data-category="Todos">Todos</button>
+                <button class="category-filter" data-category="Front-end">Front-end</button>
+                <button class="category-filter" data-category="Back-end">Back-end</button>
+                <button class="category-filter" data-category="Database">Database</button>
+                <button class="category-filter" data-category="DevOps">DevOps</button>
+                <button class="category-filter" data-category="Testing">Testing</button>
+            </div>
+        </section>
+
+        <section id="tech-grid" class="tech-grid">
+            <!-- Cards serão inseridos aqui via JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Guia Web - Desenvolvido por Eloá Silvério</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
